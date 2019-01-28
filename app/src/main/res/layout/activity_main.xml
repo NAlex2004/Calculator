@@ -80,10 +80,10 @@
                     android:layout_weight="5"
                     />
                 <Button
-                    android:id="@+id/button_0"
+                    android:id="@+id/button_point"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:text="0"
+                    android:text="."
                     android:layout_weight="5"
                     />
             </LinearLayout>
@@ -115,10 +115,10 @@
                     android:layout_weight="5"
                     />
                 <Button
-                    android:id="@+id/button_point"
+                    android:id="@+id/button_0"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:text="."
+                    android:text="0"
                     android:layout_weight="5"
                     />
             </LinearLayout>
