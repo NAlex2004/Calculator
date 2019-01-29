@@ -5,6 +5,7 @@ import org.junit.Test;
 import alex.alien.myCalc.calculator.BinaryOperationsCalculationTreeBuilder;
 import alex.alien.myCalc.calculator.CalculationTreeBuilder;
 import alex.alien.myCalc.calculator.Calculator;
+import alex.alien.myCalc.calculator.operations.MathHelper;
 import alex.alien.myCalc.calculator.operations.OperationException;
 import alex.alien.myCalc.calculator.operations.SimpleOperationsFactory;
 
@@ -54,11 +55,11 @@ public class ExampleUnitTest {
 
             expression = "-15/-3.0*5.5+14.89/4+24.578*457/3-5-4-2.2+1E3";
             result = calculator.Calculate(expression);
-            assertEquals(4764.071166666667, result, 0);
+            assertEquals(MathHelper.round(4764.071166666667, 10), result, 0);
         }
         catch (OperationException | IllegalArgumentException e) {
-            assertFalse(true);
+            fail();
         }
-
     }
+
 }

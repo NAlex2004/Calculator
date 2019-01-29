@@ -147,6 +147,7 @@ public class InputHandler implements View.OnLongClickListener, View.OnClickListe
     public boolean onLongClick(View view) {
         EditText editText = _activity.findViewById(R.id.editText);
         editText.setText("0");
+        editText.setTextColor(defaultTextColor);
         return true;
     }
 }
